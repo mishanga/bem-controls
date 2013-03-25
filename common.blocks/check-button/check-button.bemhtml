@@ -18,7 +18,7 @@ block check-button {
             tabindex: ctx.tabindex,
             checked: this.mods.checked,
             disabled: this.mods.disabled,
-            value: (ctx.value || ctx.content)
+            value: this.mods.pseudo? '' : (ctx.value || ctx.content)
         });
     }
 
